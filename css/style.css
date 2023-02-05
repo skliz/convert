@@ -194,7 +194,7 @@ img {
 }
 
 .container {
-  max-width: 76.875rem;
+  max-width: 75rem;
   margin: 3.125rem auto;
   padding: 0 0.9375rem;
   -webkit-box-sizing: content-box;
@@ -216,11 +216,22 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0.9375rem;
+}
+
+.converter > *:not(:last-child) {
+  margin-bottom: 0.9375rem;
 }
 
 .converter__box {
+  max-width: 43.75rem;
+  width: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .converter__box.move::before, .converter__box.move::after {
@@ -253,10 +264,8 @@ img {
 }
 
 .converter__textarea {
-  font-size: 0.875rem;
-  font-weight: 300;
   min-height: 18.75rem;
-  min-width: 18.75rem;
+  width: 100%;
   padding: 0.625rem;
   border: 0.0625rem solid orange;
   border-radius: 0.1875rem;
